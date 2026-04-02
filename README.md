@@ -1,307 +1,208 @@
-<div align="center">
-
-<img src="https://files.catbox.moe/zcl82b.jpg" alt="WhatsApp Baileys Edgar" width="100%" />
-
-<br/>
-<br/>
-
-# WhatsApp Baileys Edgar
-
-<p>
-  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-  <img src="https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white" />
-  <img src="https://img.shields.io/badge/Open%20Source-FF4500?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge" />
+<p align="center">
+  <img src="https://a.top4top.io/p_37287xrhs1.jpg" width="250"/>
 </p>
 
-**Open-source WhatsApp automation library \u2014 no browser required.**  
-Built on WebSocket for speed, stability, and full multi-device support.
-
-<br/>
-
-[Installation](#getting-started) &nbsp;\u2022&nbsp; [Documentation](#sendmessage-documentation) &nbsp;\u2022&nbsp; [Features](#main-features) &nbsp;\u2022&nbsp; [Telegram](https://t.me/edgar)
-
-</div>
+<h1 align="center">WhatsApp Baileys</h1>
 
 ---
 
-## What is Baileys Edgar?
+WhatsApp Baileys is an open-source library designed to help developers build automation solutions and integrations with WhatsApp efficiently and directly. Using websocket technology without the need for a browser, this library supports a wide range of features such as message management, chat handling, group administration, as well as interactive messages and action buttons for a more dynamic user experience.
 
-**WhatsApp Baileys Edgar** is a powerful, open-source library for developers who need reliable WhatsApp automation without the overhead of a browser. Powered by **WebSocket technology**, it supports message management, group administration, interactive messages, and action buttons \u2014 all in a lightweight and modular package.
+Actively developed and maintained, baileys continuously receives updates to enhance stability and performance. One of the main focuses is to improve the pairing and authentication processes to be more stable and secure. Pairing features can be customized with your own codes, making the process more reliable and less prone to interruptions.
 
-Actively maintained with continuous improvements to **pairing stability**, **session management**, and **WhatsApp multi-device compatibility**.
-
-Perfect for:
-- Business bots & chat automation
-- Customer service systems
-- Broadcast & notification tools
-- E-commerce integrations
+This library is highly suitable for building business bots, chat automation systems, customer service solutions, and various other communication automation applications that require high stability and comprehensive features. With a lightweight and modular design, baileys is easy to integrate into different systems and platforms.
 
 ---
 
-## Main Features
+### Main Features and Advantages
 
-| Feature | Description |
-|---|---|
-| **Custom Pairing** | Stable pairing with your own codes \u2014 no disconnection issues |
-| **Interactive Messages** | Buttons, menus, native flows, and more |
-| **Session Management** | Automatic, efficient, and long-term stable |
-| **Multi-Device Support** | Fully compatible with WhatsApp's latest multi-device API |
-| **Lightweight & Modular** | Easy to integrate into any Node.js project |
-| **Rich Documentation** | Comprehensive guides and example code included |
-| **Secure Auth** | Improved authentication flow with fixed prior vulnerabilities |
+- Supports automatic and custom pairing processes
+- Fixes previous pairing issues that often caused failures or disconnections
+- Supports interactive messages, action buttons, and dynamic menus
+- Efficient automatic session management for reliable operation
+- Compatible with the latest multi-device features from WhatsApp
+- Lightweight, stable, and easy to integrate into various systems
+- Suitable for developing bots, automation, and complete communication solutions
+- Comprehensive documentation and example codes to facilitate development
+
+---
+
+## Development Status
+
+This repository is under active development.  
+Updates are focused on maintaining compatibility with recent WhatsApp changes, improving connection stability, and refining internal logic related to pairing and session persistence.
+
+Most changes are incremental and aimed at long-running stability rather than experimental features.
 
 ---
 
 ## Getting Started
 
-Install via npm or yarn:
-
-```bash
-npm install @whiskeysockets/baileys
-# or
-yarn add @whiskeysockets/baileys
-```
-
-Then import and initialize:
-
-```javascript
-const { makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
-
-const { state, saveCreds } = await useMultiFileAuthState("auth_info");
-const sock = makeWASocket({ auth: state });
-
-sock.ev.on("creds.update", saveCreds);
-```
+Begin by installing the library via your preferred package manager, then follow the provided configuration guide. You can also utilize the ready-made example codes to understand how the features work. Use session storage and interactive messaging features to build complete, stable solutions tailored to your business or project needs.
 
 ---
 
-## Additional Functions
+### Contact Creator
 
-### Get Channel ID
-```javascript
-await sock.newsletterId(url);
-```
+For questions, support, or collaboration inquiries, feel free to contact the developer through the following platforms:
 
-### Check Banned Number
-```javascript
-await sock.checkWhatsApp(target);
-```
+- **Telegram**: [Telegram Contact](https://t.me/dilxzcode)
+- **Channel**: [Channel WhatsApp](https://whatsapp.com/channel/0029VanRJcU7NoaADR1oyb2v) 
+
+We aim to provide timely responses and professional assistance for all inquiries. Your support and interest are highly appreciated.
 
 ---
 
-## SendMessage Documentation
+### Contributors Outside The Baileys Code
+We would like to express our sincere appreciation to all contributors who have supported and helped improve this project.
 
-<details>
-<summary><b>Group Status Message (V2)</b></summary>
-<br/>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/dilxzcode">
+        <img src="https://github.com/dilxzcode.png" width="80px;" style="border-radius:50%;" alt="Contributor"/>
+        <br />
+        <sub><b>DilxzCode</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/anjaiedgar">
+        <img src="https://github.com/anjaiedgar.png" width="80px;" style="border-radius:50%;" alt="Contributor"/>
+        <br />
+        <sub><b>EdgarOffc</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/z4phdev">
+        <img src="https://github.com/z4phdev.png" width="80px;" style="border-radius:50%;" alt="Developer"/>
+        <br />
+        <sub><b>z4phdev</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/kiuur">
+        <img src="https://github.com/kiuur.png" width="80px;" style="border-radius:50%;" alt="Contributor"/>
+        <br />
+        <sub><b>KyuuRzy</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
+
+---
+
+## How To Usage?
+```json
+"dependencies": {
+  "@whiskeysockets/baileys": "github:dilxzcode/bails"
+}
+```
+## Import
 ```javascript
-await sock.sendMessage(target, {
-    groupStatusMessage: {
-        text: "Hello World"
-    }
+const {
+  default: makeWASocket
+} = require("@whiskeysockets/baileys");
+```
+
+---
+# How To Connect To Whatsapp
+## With QR Code
+```javascript
+const client = makeWASocket({
+  browser: ["Ubuntu", "Chrome", "20.0.0"],
+  printQRInTerminal: true
 });
 ```
-</details>
 
-<details>
-<summary><b>Album Message (Multiple Images)</b></summary>
-<br/>
-
+## Connect With Number
 ```javascript
-await sock.sendMessage(target, {
-    albumMessage: [
-        { image: cihuy, caption: "First photo" },
-        { image: { url: "IMAGE_URL" }, caption: "Second photo" }
-    ]
+const {
+  default: makeWASocket,
+  fetchLatestWAWebVersion
+} = require("@whiskeysockets/baileys");
+
+const client = makeWASocket({
+  browser: ["Ubuntu", "Chrome", "20.0.0"],
+  printQRInTerminal: false,
+  version: fetchLatestWAWebVersion()
+});
+
+const number = "628XXXXXXXXX";
+const code = await client.requestPairingCode(number.trim());
+
+console.log("Pairing Code:", code);
+```
+
+# Sending messages
+
+## send orderMessage
+```javascript
+const fs = require('fs');
+const nameImg = fs.readFileSync('./Image');
+
+await client.sendMessage(m.chat, {
+  thumbnail: nameImg,
+  message: "Example order message",
+  orderTitle: "Example Order",
+  totalAmount1000: 8888,
+  totalCurrencyCode: "IDR"
 }, { quoted: m });
 ```
-</details>
 
-<details>
-<summary><b>Event Message</b></summary>
-<br/>
-
+## send pollResultSnapshotMessage
 ```javascript
-await sock.sendMessage(target, {
-    eventMessage: {
-        isCanceled: false,
-        name: "Event Name",
-        description: "Event description here",
-        location: {
-            degreesLatitude: 0,
-            degreesLongitude: 0,
-            name: "Location Name"
-        },
-        joinLink: "https://call.whatsapp.com/video/example",
-        startTime: "1763019000",
-        endTime: "1763026200",
-        extraGuestsAllowed: false
+await client.sendMessage(m.chat, {
+  pollResultMessage: {
+    name: "Example Poll Result",
+    options: [
+      { optionName: "Option A" },
+      { optionName: "Option B" }
+    ],
+    newsletter: {
+      newsletterName: "Example Newsletter",
+      newsletterJid: "1@newsletter"
     }
-}, { quoted: m });
+  }
+});
 ```
-</details>
 
-<details>
-<summary><b>Poll Result Message</b></summary>
-<br/>
-
+## send productMessage
 ```javascript
-await sock.sendMessage(target, {
-    pollResultMessage: {
-        name: "Poll Title",
-        pollVotes: [
-            { optionName: "Option A", optionVoteCount: "112233" },
-            { optionName: "Option B", optionVoteCount: "1" }
-        ]
-    }
-}, { quoted: m });
+await client.relayMessage(m.chat, {
+  productMessage: {
+    title: "Example Product",
+    description: "Product description example",
+    thumbnail: { url: "./example.jpg" },
+    productId: "PRODUCT_ID",
+    retailerId: "RETAILER_ID",
+    url: "https://example.com",
+    body: "Product body text",
+    footer: "Example footer",
+    buttons: [
+      {
+        name: "cta_url",
+        buttonParamsJson: JSON.stringify({
+          display_text: "Open Link",
+          url: "https://example.com"
+        })
+      }
+    ],
+    priceAmount1000: 50000,
+    currencyCode: "IDR"
+  }
+});
 ```
-</details>
 
-<details>
-<summary><b>Simple Interactive Message</b></summary>
-<br/>
-
+## Thanks For Support
 ```javascript
-await sock.sendMessage(target, {
-    interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
-        footer: "telegram: @edgar",
-        buttons: [
-            {
-                name: "cta_copy",
-                buttonParamsJson: JSON.stringify({
-                    display_text: "Copy Code",
-                    id: "123456789",
-                    copy_code: "ABC123XYZ"
-                })
-            }
-        ]
-    }
-}, { quoted: m });
+const credits = {
+  creator: "dilxzcode",
+  reference: "edgar",
+  reference: "kiuur",
+  reference: "yuukey"
+};
+
+module.exports = credits;
 ```
-</details>
 
-<details>
-<summary><b>Interactive Message with Native Flow</b></summary>
-<br/>
-
-```javascript
-await sock.sendMessage(target, {
-    interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
-        footer: "telegram: @edgar",
-        image: { url: "https://example.com/image.jpg" },
-        nativeFlowMessage: {
-            messageParamsJson: JSON.stringify({
-                limited_time_offer: {
-                    text: "Limited offer text",
-                    url: "https://t.me/edgar",
-                    copy_code: "PROMO2024",
-                    expiration_time: Date.now() * 999
-                },
-                bottom_sheet: {
-                    in_thread_buttons_limit: 2,
-                    divider_indices: [1, 2, 3, 4, 5, 999],
-                    list_title: "List Title",
-                    button_title: "Button Title"
-                },
-                tap_target_configuration: {
-                    title: "Title",
-                    description: "Description text",
-                    canonical_url: "https://t.me/edgar",
-                    domain: "shop.example.com",
-                    button_index: 0
-                }
-            }),
-            buttons: [
-                {
-                    name: "single_select",
-                    buttonParamsJson: JSON.stringify({ has_multiple_buttons: true })
-                },
-                {
-                    name: "call_permission_request",
-                    buttonParamsJson: JSON.stringify({ has_multiple_buttons: true })
-                },
-                {
-                    name: "single_select",
-                    buttonParamsJson: JSON.stringify({
-                        title: "Select an Option",
-                        sections: [
-                            {
-                                title: "Section Title",
-                                highlight_label: "Label",
-                                rows: [
-                                    {
-                                        title: "Row Title",
-                                        description: "Row description",
-                                        id: "row_1"
-                                    }
-                                ]
-                            }
-                        ],
-                        has_multiple_buttons: true
-                    })
-                },
-                {
-                    name: "cta_copy",
-                    buttonParamsJson: JSON.stringify({
-                        display_text: "Copy Code",
-                        id: "123456789",
-                        copy_code: "ABC123XYZ"
-                    })
-                }
-            ]
-        }
-    }
-}, { quoted: m });
-```
-</details>
-
-<details>
-<summary><b>Interactive Message with Thumbnail</b></summary>
-<br/>
-
-```javascript
-await sock.sendMessage(target, {
-    interactiveMessage: {
-        header: "Hello World",
-        title: "Hello World",
-        footer: "telegram: @edgar",
-        image: { url: "https://example.com/image.jpg" },
-        buttons: [
-            {
-                name: "cta_copy",
-                buttonParamsJson: JSON.stringify({
-                    display_text: "Copy Code",
-                    id: "123456789",
-                    copy_code: "ABC123XYZ"
-                })
-            }
-        ]
-    }
-}, { quoted: m });
-```
-</details>
-
-<details>
-<summary><b>Product Message</b></summary>
-<br/>
-
-```javascript
-await sock.sendMessage(target, {
-    productMessage: {
-        title: "Sample Product",
-        description: "This is the product description.",
-        thumbnail: { url: "https://example.com/image.jpg" },
-        productId: "PROD001",
-        retailerId: "RETAIL001",
-        url: "https://example.com/product",
-        body: "Product details",
-        footer: "Special price",
-        pr
