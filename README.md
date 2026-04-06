@@ -48,8 +48,8 @@ Begin by installing the library via your preferred package manager, then follow 
 
 For questions, support, or collaboration inquiries, feel free to contact the developer through the following platforms:
 
-- **Telegram**: [Telegram Contact](https://t.me/dilxzcode)
-- **Channel**: [Channel WhatsApp](https://whatsapp.com/channel/0029VanRJcU7NoaADR1oyb2v) 
+- **Telegram**: [Telegram Contact](https://t.me/NASZ_01)
+- **Channel**: [Channel Telegram](https://t.me/naszinfo) 
 
 We aim to provide timely responses and professional assistance for all inquiries. Your support and interest are highly appreciated.
 
@@ -156,6 +156,5 @@ await client.relayMessage(m.chat, {
   }
 });
 ```
-
-module.exports = credits;
 ```
+module.exports = credits;```
