@@ -10,6 +10,7 @@ WhatsApp Baileys is an open-source library designed to help developers build aut
 
 Actively developed and maintained, baileys continuously receives updates to enhance stability and performance. One of the main focuses is to improve the pairing and authentication processes to be more stable and secure. Pairing features can be customized with your own codes, making the process more reliable and less prone to interruptions.
 
+
 This library is highly suitable for building business bots, chat automation systems, customer service solutions, and various other communication automation applications that require high stability and comprehensive features. With a lightweight and modular design, baileys is easy to integrate into different systems and platforms.
 
 ---
@@ -40,6 +41,7 @@ Most changes are incremental and aimed at long-running stability rather than exp
 
 Begin by installing the library via your preferred package manager, then follow the provided configuration guide. You can also utilize the ready-made example codes to understand how the features work. Use session storage and interactive messaging features to build complete, stable solutions tailored to your business or project needs.
 
+
 ---
 
 ### Contact Creator
@@ -50,45 +52,6 @@ For questions, support, or collaboration inquiries, feel free to contact the dev
 - **Channel**: [Channel WhatsApp](https://whatsapp.com/channel/0029VanRJcU7NoaADR1oyb2v) 
 
 We aim to provide timely responses and professional assistance for all inquiries. Your support and interest are highly appreciated.
-
----
-
-### Contributors Outside The Baileys Code
-We would like to express our sincere appreciation to all contributors who have supported and helped improve this project.
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/dilxzcode">
-        <img src="https://github.com/dilxzcode.png" width="80px;" style="border-radius:50%;" alt="Contributor"/>
-        <br />
-        <sub><b>DilxzCode</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/anjaiedgar">
-        <img src="https://github.com/anjaiedgar.png" width="80px;" style="border-radius:50%;" alt="Contributor"/>
-        <br />
-        <sub><b>EdgarOffc</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/z4phdev">
-        <img src="https://github.com/z4phdev.png" width="80px;" style="border-radius:50%;" alt="Developer"/>
-        <br />
-        <sub><b>z4phdev</b></sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/kiuur">
-        <img src="https://github.com/kiuur.png" width="80px;" style="border-radius:50%;" alt="Contributor"/>
-        <br />
-        <sub><b>KyuuRzy</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
 
 ---
 
@@ -194,15 +157,5 @@ await client.relayMessage(m.chat, {
 });
 ```
 
-## Thanks For Support
-```javascript
-const credits = {
-  creator: "dilxzcode",
-  reference: "edgar",
-  reference: "kiuur",
-  reference: "yuukey"
-};
-
 module.exports = credits;
 ```
-
